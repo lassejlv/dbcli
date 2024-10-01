@@ -1,16 +1,22 @@
 {
-  "name": "cli",
-  "module": "index.ts",
-  "type": "module",
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
-  "dependencies": {
-    "commander": "^12.1.0",
-    "ora": "^8.1.0",
-    "zod": "^3.23.8"
-  }
+   "name": "@themrdev/dbcli",
+   "description": "🐳 A CLI tool for scaffolding new database using Docker. (in alpha)",
+   "version": "0.0.1-alpha",
+   "type": "module",
+   "bin": {
+      "dbcli": "build/cli.js"
+   },
+   "main": "build/cli.js",
+   "devDependencies": {
+      "@types/bun": "^1.1.10"
+   },
+   "peerDependencies": {
+      "typescript": "^5.0.0"
+   },
+   "dependencies": {
+      "bun": "^1.1.29",
+      "commander": "^12.1.0",
+      "ora": "^8.1.0",
+      "zod": "^3.23.8"
+   }
 }

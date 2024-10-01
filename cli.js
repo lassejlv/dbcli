@@ -1,3 +1,5 @@
+#! /usr/bin/env bun
+
 import { program } from 'commander';
 import { z } from 'zod';
 import ora from 'ora';
@@ -74,7 +76,7 @@ if (program.opts().new) {
 
             spinner.succeed(`Database ${result.data.database} is now running`);
             process.exit(0);
-         } catch (error: any) {
+         } catch (error) {
             spinner.fail(`Error: ${error.message}`);
             process.exit(1);
          }

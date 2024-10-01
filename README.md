@@ -1,15 +1,21 @@
-# cli
+# dbcli
 
-To install dependencies:
+🐳 A CLI tool for scaffolding new database using Docker. (in alpha)
 
-```bash
-bun install
-```
+## Installation
 
-To run:
+This tool only works with [Bun](https://bun.sh) and [Docker](https://www.docker.com/) installed on your machine.
 
 ```bash
-bun run index.ts
+bun install -g @themrdev/dbcli
 ```
 
-This project was created using `bun init` in bun v1.1.29. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
+## Usage
+
+Only postgres is supported for now.
+
+```bash
+dbcli --new --type postgres # It will prompt and ask for username,password and database name
+```
+
+And you are good to go. It will create a new postgres database with the provided credentials.
